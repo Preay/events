@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Upcoming from './components/Upcoming';
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Services />
         <Portfolio />
         <Upcoming />
+        <Testimonials />
         <Contact />
       </main>
     </>

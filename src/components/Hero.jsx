@@ -6,15 +6,15 @@ export default function Hero() {
       {/* Background Wrapper */}
       <div style={{ position: 'absolute', inset: 0, zIndex: -1, overflow: 'hidden' }}>
         {/* Placeholder video element */}
-        <video 
-          autoPlay 
-          muted 
-          loop 
+        <video
+          autoPlay
+          muted
+          loop
           playsInline
           poster="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80"
           style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }}
         >
-          {/* Add a real event video source here */}
+          <source src="https://www.pexels.com/download/video/9757102/" type="video/mp4" />
         </video>
         {/* Black overlay for contrast */}
         <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.4)' }} />

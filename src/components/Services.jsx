@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 
 const services = [
-  "CORPORATE GALAS",
-  "LUXURY WEDDINGS",
-  "PRIVATE PARTIES",
-  "BRAND LAUNCHES"
+  "COMMERCIAL EVENTS",
+  "WEDDINGS",
+  "DECORS",
+  "VENUES",
 ];
 
 export default function Services() {
   return (
     <section id="services" className="section" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
       <p style={{ fontFamily: 'Inter', fontWeight: 500, marginBottom: '2rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>What we do</p>
-      
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         {services.map((svc, i) => (
           <motion.div

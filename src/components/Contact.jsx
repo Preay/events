@@ -1,14 +1,14 @@
 import { ArrowRight } from 'lucide-react';
 
 const InstagramIcon = ({ size }) => (
-  <svg 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
     strokeLinejoin="round"
   >
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -21,15 +21,15 @@ export default function Contact() {
   return (
     <section id="contact" className="section" style={{ backgroundColor: 'var(--foreground)', color: 'var(--background)' }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
-        
+
         {/* Form Area */}
         <div>
           <h2 className="huge-subtitle" style={{ color: 'var(--background)', marginBottom: '2rem' }}>LET'S TALK.</h2>
-          
+
           <form style={{ display: 'flex', flexDirection: 'column', gap: '2rem', maxWidth: '800px' }} onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="text" 
-              placeholder="YOUR NAME" 
+            <input
+              type="text"
+              placeholder="YOUR NAME"
               style={{
                 width: '100%',
                 background: 'transparent',
@@ -43,9 +43,9 @@ export default function Contact() {
                 outline: 'none'
               }}
             />
-            <input 
-              type="email" 
-              placeholder="YOUR EMAIL" 
+            <input
+              type="email"
+              placeholder="YOUR EMAIL"
               style={{
                 width: '100%',
                 background: 'transparent',
@@ -59,9 +59,9 @@ export default function Contact() {
                 outline: 'none'
               }}
             />
-            <input 
-              type="text" 
-              placeholder="EVENT DETAILS (DATE, LOCATION, VIBE)" 
+            <input
+              type="tel"
+              placeholder="YOUR PHONE"
               style={{
                 width: '100%',
                 background: 'transparent',
@@ -75,10 +75,26 @@ export default function Contact() {
                 outline: 'none'
               }}
             />
-            
-            <button 
+            <input
+              type="text"
+              placeholder="JO PUCHNA HAI PUCH LE"
+              style={{
+                width: '100%',
+                background: 'transparent',
+                border: 'none',
+                borderBottom: '2px solid #333',
+                color: 'var(--background)',
+                fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+                fontFamily: 'Outfit',
+                fontWeight: 800,
+                padding: '1rem 0',
+                outline: 'none'
+              }}
+            />
+
+            <button
               type="submit"
-              className="btn-primary" 
+              className="btn-primary"
               style={{
                 backgroundColor: 'var(--background)',
                 color: 'var(--foreground)',
@@ -99,9 +115,9 @@ export default function Contact() {
           <div style={{ fontFamily: 'Inter', fontWeight: 500 }}>
             © 2026 AGENCY. ALL RIGHTS RESERVED.
           </div>
-          <a 
-            href="https://instagram.com" 
-            target="_blank" 
+          <a
+            href="https://instagram.com"
+            target="_blank"
             rel="noreferrer"
             style={{
               display: 'flex',

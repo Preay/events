@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const upcoming = [
-  { date: "OCT 24", name: "NY FASHION WEEK AFTERPARTY", loc: "NEW YORK" },
+  { date: "APR 25", name: "PAJAMA PARTY 2.0", loc: "ECLIPSE PICKLEBALL COURT" },
   { date: "NOV 12", name: "TECH SUMMIT VIP GALA", loc: "SAN FRANCISCO" },
   { date: "DEC 31", name: "MILLENNIUM EVE", loc: "MIAMI" }
 ];
@@ -10,7 +10,7 @@ export default function Upcoming() {
   return (
     <section className="section" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
       <p style={{ fontFamily: 'Inter', fontWeight: 500, marginBottom: '2rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Upcoming</p>
-      
+
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         {upcoming.map((item, i) => (
           <motion.div

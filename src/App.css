@@ -17,10 +17,9 @@
 }
 
 .huge-title {
-  font-size: clamp(3rem, 10vw, 12rem);
+  font-size: clamp(2rem, 11vw, 12rem);
   line-height: 0.9;
   margin-bottom: 2rem;
-  word-break: break-word;
 }
 
 .huge-subtitle {
