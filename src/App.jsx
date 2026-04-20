@@ -13,6 +13,7 @@ import Contact from './components/Contact';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   // When loading is complete, we instantly unlock scroll
   useEffect(() => {
@@ -23,13 +24,21 @@ function App() {
     }
   }, [loading]);
 
+  // Safety fallback: if video takes longer than 6 seconds to load, let the page reveal anyway
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVideoLoaded(true);
+    }, 6000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      {loading && <Preloader onComplete={() => setLoading(false)} />}
+      {loading && <Preloader isReady={videoLoaded} onComplete={() => setLoading(false)} />}
       
       <main>
         <Navbar />
-        <Hero />
+        <Hero onVideoReady={() => setVideoLoaded(true)} />
         <Services />
         <Portfolio />
         <Upcoming />

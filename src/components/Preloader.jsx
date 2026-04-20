@@ -1,18 +1,20 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function Preloader({ onComplete }) {
+export default function Preloader({ isReady, onComplete }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     let interval;
-    if (count < 100) {
+    if (count < 99) {
       interval = setInterval(() => {
         setCount((prev) => {
           const next = prev + Math.floor(Math.random() * 5) + 1;
-          return next > 100 ? 100 : next;
+          return next > 99 ? 99 : next;
         });
       }, 50);
+    } else if (count === 99 && isReady) {
+      setTimeout(() => setCount(100), 200);
     } else if (count === 100) {
       setTimeout(() => {
         setCount(101);
@@ -24,7 +26,7 @@ export default function Preloader({ onComplete }) {
     }
 
     return () => clearInterval(interval);
-  }, [count, onComplete]);
+  }, [count, isReady, onComplete]);
 
   return (
     <AnimatePresence>

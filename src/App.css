@@ -17,7 +17,7 @@
 }
 
 .huge-title {
-  font-size: clamp(2rem, 11vw, 12rem);
+  font-size: clamp(2rem, 8vw, 12rem);
   line-height: 0.9;
   margin-bottom: 2rem;
 }

@@ -14,7 +14,7 @@ export default function Navbar() {
       color: '#ffffff'
     }}>
       <div style={{ fontFamily: 'Outfit', fontWeight: 900, fontSize: '1.5rem', textTransform: 'uppercase' }}>
-        AGENCY.
+        EVENTS
       </div>
       <div style={{ display: 'flex', gap: '2rem', fontFamily: 'Inter', fontWeight: 500 }}>
         <a href="#services">SERVICES</a>

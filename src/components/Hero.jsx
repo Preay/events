@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function Hero() {
+export default function Hero({ onVideoReady }) {
   return (
     <section className="app-container" style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '2rem', zIndex: 1 }}>
       {/* Background Wrapper */}
@@ -11,6 +11,7 @@ export default function Hero() {
           muted
           loop
           playsInline
+          onLoadedData={() => onVideoReady && onVideoReady()}
           poster="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80"
           style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }}
         >
