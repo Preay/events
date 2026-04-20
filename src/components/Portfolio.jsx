@@ -4,7 +4,7 @@ const mediaList = [
   { type: 'video', src: "https://www.pexels.com/download/video/35323936/" },
   { type: 'image', src: "https://images.unsplash.com/photo-1549451371-64aa98a6f660?auto=format&fit=crop&q=80&w=800" },
   { type: 'video', src: "https://www.pexels.com/download/video/35340079/" },
-  { type: 'image', src: "https://images.unsplash.com/photo-1519671482749-fd098f3f8a62?auto=format&fit=crop&q=80&w=800" },
+  { type: 'image', src: "https://images.unsplash.com/photo-1670028514318-0ac718c0590d?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 
 // Duplicate for infinite scroll loop

@@ -12,7 +12,7 @@ export default function Hero({ onVideoReady }) {
           loop
           playsInline
           onLoadedData={() => onVideoReady && onVideoReady()}
-          poster="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80"
+          poster="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }}
         >
           <source src="https://www.pexels.com/download/video/9757102/" type="video/mp4" />
